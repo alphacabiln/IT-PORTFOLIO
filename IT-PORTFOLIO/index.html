@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Information Technology Portfolio - [Your Name]</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+    :root{
+        --bg:#0f1724;
+        --card:#0b1220;
+        --muted:#98a0b3;
+        --accent:#6ee7b7;
+        --glass: rgba(255,255,255,0.03);
+        --rounded:14px;
+        font-family: "Belleza", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    *{
+        box-sizing:border-box;
+    }
+  
+    body{
+        margin:0;
+        background:linear-gradient(135deg, #01072a, #081350, #2c40a8);
+        color:#e6eef8;
+        min-height:100vh;
+    }
+  
+    .container{
+        max-width:1100px;
+        margin:40px auto; 
+        padding:28px;
+    }
+
+    header{
+        display:flex;
+        gap:18px;
+        align-items:center;
+    }
+  
+    .avatar{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+  
+    h1{
+        margin:0;
+        font-size:30px;
+    }
+  
+    p.lead{
+        margin:6px 0 0;
+        color:var(--muted);
+    }
+
+    .grid{
+        display:grid;
+        grid-template-columns:1fr 320px;
+        gap:22px;
+        margin-top:28px;
+    }
+
+    .card{
+        background:var(--card);
+        padding:18px;
+        border-radius:var(--rounded);
+        box-shadow:0 6px 18px rgba(2,6,23,0.6);
+    }
+
+    /* ABOUT & SKILLS */
+    .section-title{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        margin-bottom:12px;
+    }
+    
+    .skills{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:10px;
+    }
+    
+    .skill{
+        font-size:13px;
+        color:var(--muted)
+    }
+    
+    .bar{
+        height:8px;
+        background:var(--glass);
+        border-radius:8px;
+        overflow:hidden
+    }
+    
+    .bar > i{
+        display:block;
+        height:100%;
+        background:linear-gradient(90deg,var(--accent),#7dd3fc);
+    }
+
+    /* Projects */
+    .projects{
+        display:grid;
+        gap:12px
+    }
+    
+    .proj{
+        display:flex;
+        flex-direction:column;
+        gap:8px;
+        padding:12px;
+        background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+        border-radius:10px
+    }
+    
+    .proj h4{
+        margin:0
+    }
+    
+    .proj .meta{
+        font-size:13px;
+        color:var(--muted)
+    }
+    
+    .tags{
+        display:flex;
+        gap:8px;
+        flex-wrap:wrap
+    }
+    
+    .tag{
+        font-size:12px;
+        padding:6px 8px;
+        background:rgba(255,255,255,0.03);
+        border-radius:999px;color:var(--muted)
+    }
+
+    .small{
+        font-size:15px;
+        color:var(--muted)
+    }
+
+    footer{
+        margin-top:28px;
+        text-align:center;
+        color:var(--muted);
+        font-size:13p;
+    }
+
+    @media (max-width:900px){
+        .grid{
+            grid-template-columns:1fr;
+        }
+        .avatar{
+            width:72px;
+            height:72px;
+        }
+    }
+
+    /* Utility */
+    pre{
+        white-space:pre-wrap;
+        background:rgba(255,255,255,0.02);
+        padding:12px;
+        border-radius:10px;
+        color:var(--muted);
+        overflow:auto
+    }
+  </style>
+  </head>
+  
+  <body>
+  <div class="container">
+    <header>
+        <div class="avatar">
+            <img src="profile.jpg" alt="profile">
+        </div>
+        <div>
+            <h1>CABILIN, ALPHA FAITH AMODIA</h1>
+            <p class="lead">BS Information Technology | Passion: Web Development </p>
+        </div>
+    </header>
+
+    <div class="grid">
+        <!-- MAIN COLUMN -->
+         <main>
+            <section class="card">
+                <div class="section-title">
+                    <strong>About Me</strong>
+                    <span class="small">Contact: alphacabilin6@gmail.com • 09948910484</span>
+                </div>
+                <p style="color:var(--muted);line-height:1.6">I’m an aspiring Information Technology student who is passionate about technology and innovation. I enjoy exploring various areas of IT, including programming, networking, web development, and database management. My goal is to continuously develop my skills and use technology to make a positive impact on people and communities. Aside from academics, I enjoy learning new tools, collaborating with others on projects, and staying updated with the latest tech trends. I believe that with hard work, creativity, and persistence, I can become a successful IT expert in the future.</p>
+            </section>
+            
+            <section class="card" style="margin-top:18px">
+                <div class="section-title">
+                    <strong>Skills & Competencies</strong>
+                    <span class="small">Tools: VS Code • MySQL</span>
+                </div>
+                <div class="skills">
+                    <div class="skill">HTML & CSS <span style="float:right">65%</span></div>
+                    <div class="bar" aria-hidden><i style="width:65%"></i></div>
+                    
+                    <div class="skill" style="margin-top:8px">JavaScript / Python <span style="float:right">30%</span></div>
+                    <div class="bar" aria-hidden><i style="width:30%"></i></div>
+                    
+                    <div class="skill" style="margin-top:8px">Database (MySQL) <span style="float:right">50%</span></div>
+                    <div class="bar" aria-hidden><i style="width:50%"></i></div>
+                </div>
+            </section>
+            
+            <section class="card" style="margin-top:18px">
+                <div class="section-title">
+                    <strong>Projects</strong><span class="small">Select projects and short descriptions</span>
+                </div>
+                <div class="projects">
+                    <div class="proj">
+                        <h4>BOOKWISE MANAGEMENT SYSTEM</h4>
+                        <div class="meta">JavaScript • MySQL • HTML • CSS</div>
+                        <p class="small">A simple library system that lat the user pick on what genre he or she like and what book they want depends on their moods. Features on unique classifications of book that depends on their mood.</p>
+                        <div class="tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                    </div>
+                    
+                    <div class="proj">
+                        <h4>PERSONAL PORTFOLIO</h4>
+                        <div class="meta">HTML • CSS • JavaScript</div>
+                        <p class="small">A responsive single-page website showcasing my projects, resume, and contact form. Hosted on GitHub Pages.</p>
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                    
+                    <div class="proj">
+                        </h4>CHESS GAME</h4>
+                        <div class="meta">HTML • CSS • JavaScript</div>
+                        <p class="small">A simple interactive game which you can play with the AI or with your friend</p>
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="card" style="margin-top:18px">
+                <div class="section-title"><strong>Reflection</strong>
+                    <span class="small">Short personal reflection</span>
+                </div>
+                <p class="small">Creating this portfolio helped me track my growth and see how my studies apply in real life. I learned that keeping organized documentation and version control is important for professional work. In the future, I plan to expand my projects to include web apps with databases and learn more about basic security practices. I also gained a better understanding of how design, functionality, and user experience come together to build effective systems. This experience improved my problem-solving skills and pushed me to think critically when facing technical challenges. Through this process, I became more confident in presenting my work and explaining my coding choices. It also inspired me to stay updated with new technologies and industry trends. Overall, creating this portfolio reminded me that ongoing learning is essential to becoming a skilled and flexible IT professional.</p>
+            </section>
+        </main>
+        
+        <!-- SIDEBAR -->
+         <div>
+            <strong>Contact</strong>
+            <p class="small">Email: alphacabilin6@gmail.com
+                <br>Phone: 09948910484
+                <br>GitHub: alphacabilin.github.io
+            </p>
+        </div>
+    </div>
+    
+    <footer>peytyyyyy | INFORMATION TECHNOLOGY PORTFOLIO</footer>
+</div>
+</body>
+</html>
